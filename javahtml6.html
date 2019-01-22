@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice javascript 6</title>
+  </head>
+  <body>
+    <form>
+            <label for="firstNumber">Premier nombre : </label><input type="text" id="firstNumber" name="firstNumber"/><br/>
+            <label for="secondNumber">Deuxième nombre : </label><input type="text" id="secondNumber" name="secondNumber"/><br/>
+            <button id="submit" onclick="toggle" name="submit">Valider</button>
+</form>
+    <script>
+      function toggle() {
+          var firstNnumber = document.getElementById("firstNumber").value;
+          var secondNumber = document.getElementById("secondNumber").value;
+          var result = firstNumber%secondNumber;
+          alert(result);
+         }
+
+    </script>
+
+  </body>
+</html>
